@@ -3,7 +3,7 @@
 using namespace std;
 int main() {
 	string str1,str2;
-	int max,len1,len2,i,count=0;
+	int max,len1,len2,i,count=0,count1=0,count2=0;
 	cin>>str1>>str2;
 	len1=str1.length();
 	len2=str2.length();
@@ -20,17 +20,21 @@ int main() {
 	}else if(len1>len2){
 		if(len2==1){
 			for(i=0;i<len1;i++){
-				if(str1[i]==str2[0])
-				count-=1;
+				if(str1[i]==str2[0]){
+					count1=-1;
+				}
+				if(str1[i]==str2[0]){
+					count2+=1;
+				}
+				if(str1[i]!=str2[0]){
+					count2+=1;
+				}
 			}
+			count=count1+count2;
+			
 		}
-		
-		for(i=0;i<len1;i++){
-			if(str1[i]!=str2[i]){
-				count+=1;
-			}	
-		}
-	}
+	
+}
 	cout<<count;
 	return 0;
 }
