@@ -1,6 +1,6 @@
-a = int(input())
-hours = a/60
-if(a%60==0):
-    print(int(hours))
+val = int(input())
+hour = val/60
+if(val%60==0):
+    print(int(hour))
 else:
-    print(str(int(hours))+" "+str(a%60))
+    print(str(int(hour))+" "+str(a%60))
