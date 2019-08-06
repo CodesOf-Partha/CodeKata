@@ -1,29 +1,29 @@
 #include <iostream>
 using namespace std;
 int main() {
-  string name1,name2;
-  bool flag=false;
-  cin>>name1;
+  string name,name2;
+  bool boo=false;
+  cin>>name;
   cin>>name2;
-  if(name1.length()!=name2.length()){
-    if(name1.length()>name2.length()){
-      cout<<name1<<endl;
+  if(name.length()!=name2.length()){
+    if(name.length()>name2.length()){
+      cout<<name<<endl;
     }
   }
   else{
-    for(int i=0;i<name1.length();i++){
-      if(name1[i]==name2[i]){
-        flag=true;
+    for(int i=0;i<name.length();i++){
+      if(name[i]==name2[i]){
+        boo=true;
       }
       else{
-        flag=false;
-        cout<<name1<<endl;
+        boo=false;
+        cout<<name<<endl;
         break;
       }
     }
-    if(flag==true){
-      if(name1[0]>name2[0]){
-        cout<<name1<<endl;
+    if(boo==true){
+      if(name[0]>name2[0]){
+        cout<<name<<endl;
       }
       else{
         cout<<name2<<endl;
