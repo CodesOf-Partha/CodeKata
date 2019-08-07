@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 int main() {
-  string name1,name2;
-  cin>>name1;
-  cin>>name2;
-  cout<<name1<<name2<<endl;
+  string val1,val2;
+  cin>>val1;
+  cin>>val2;
+  cout<<val1<<val2<<endl;
 }
