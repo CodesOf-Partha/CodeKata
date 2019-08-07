@@ -1,2 +1,2 @@
-a=input().split('.')
-print(len(a))
+inputVal=input().split('.')
+print(len(inputVal))
